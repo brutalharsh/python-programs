@@ -1,4 +1,4 @@
-#Write a Python program to do arithmetical operations addition and division.
+#Write a Python program to do arithmetical operations addition
 
 num1 = float(input("Enter the first number for addition: "))
 num2 = float(input("Enter the second number for addition: "))
