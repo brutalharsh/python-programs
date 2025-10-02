@@ -1,3 +1,9 @@
+#####
 git add .
 git commit -m "add program"
 git push origin main
+
+
+
+####
+git pull
