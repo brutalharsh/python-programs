@@ -1,22 +1,21 @@
 import random
 
-print(" Welcome to the Number Guessing Game!")
+number = random.randint(1, 10)
+guess = 0 
+attempts = 0
 
-secret_number = random.randint(1, 10)
+print(" Guess the number between 1 and 10!")
 
-for attempt in range(1, 6):
-    guess = int(input(f"\nAttempt {attempt}/5 - Enter your guess (1 to 10): "))
+while guess != number:
+    guess = int(input("Enter your guess: "))
+    attempts += 1
 
-    if guess == secret_number:
-        print(" Boom! You guessed it right!")
-        break
-    elif guess < secret_number:
-        print("Too low! Try a bit higher.")
+    if guess == number:
+        print(f" You got it right in {attempts} tries! 🎉")
+    elif guess < number:
+        print("Too low! Try again.")
     else:
-        print("Too high! Try a bit lower.")
+        print("Too high! Try again.")
 
-else:
-   
-    print(f"\n  The correct number was {secret_number}.")
+print("Game Over ")
 
-print(" Thanks for playing!")
