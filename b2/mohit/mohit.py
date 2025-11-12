@@ -7,7 +7,7 @@ attempts = 0
 print(" Guess the number between 1 and 10!")
 
 while guess != number:
-    guess = int(input("Enter your guess: "))
+    guess = int(input("Enter your gues: "))
     attempts += 1
 
     if guess == number:
@@ -17,5 +17,5 @@ while guess != number:
     else:
         print("Too high! Try again.")
 
-print("Game Over ")
+print("Game ended.") 
 
