@@ -11,7 +11,7 @@ while guess != number:
     attempts += 1
 
     if guess == number:
-        print(f" You got it right in {attempts} tries! 🎉")
+        print(f" You got it right in {attempts} tries! ")
     elif guess < number:
         print("Too low! Try again.")
     else:
